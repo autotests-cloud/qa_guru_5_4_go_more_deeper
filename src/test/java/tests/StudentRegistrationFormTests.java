@@ -75,9 +75,9 @@ public class StudentRegistrationFormTests {
 
         // Assert / Then / Verify successful form submit
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave(text(firstName + " " + lastName),
-                text(email), text(gender));
-        $(".table-responsive").$(byText("Student Name")).parent().shouldHave(text(firstName + " " + lastName));
+//        $(".table-responsive").shouldHave(text(firstName + " " + lastName),
+//                text(email), text(gender));
+//        $(".table-responsive").$(byText("Student Name")).parent().shouldHave(text(firstName + " " + lastName));
 //        $(byText("Student Name")).parent().shouldHave(text(firstName + " " + lastName)); // wrong!
         $x("//td[text()='Student Name']").parent().shouldHave(text(firstName + " " + lastName));
         $x("//td[text()='Student Email']").parent().shouldHave(text(email));
