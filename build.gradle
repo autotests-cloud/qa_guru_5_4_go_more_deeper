@@ -12,6 +12,7 @@ def selenideVersion = "5.19.0",
 dependencies {
     testImplementation (
             "com.codeborne:selenide:$selenideVersion",
+            "com.github.javafaker:javafaker:1.0.2",
             "org.junit.jupiter:junit-jupiter-api:$junitVersion")
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
 }
